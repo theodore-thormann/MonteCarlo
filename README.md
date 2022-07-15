@@ -283,3 +283,17 @@ combo():
     
 face_counts_per_roll():
     Computes how many times a given face is rolled for each roll of a game.    
+
+# Manifest
+MonteCarlo/
+  MonteCarlo/
+    ClassesFinalProject.py
+    ClassesFinalProject_test.py
+    __init__.py
+.gitignore
+ClassesFinalProject_test.txt
+FinalProjectSubmissionTemplate.ipynb
+LICENSE
+README.md
+directory.txt
+setup.py
