@@ -137,15 +137,40 @@ new_analyzer.face_count_df
         
 ## Die Class Methods
 change_weight(face_changed, new_weight):
-Changes the weight of the face corresponding to the user input
+    Changes the weight of the face corresponding to the user input
         
-Parameters
-----------
-face_changed : number or string
-    the face that the user wants changed
-new_weight : float
-    the number that the user wants the weight of the die face changed to
+    Parameters
+    ----------
+    face_changed : number or string
+        the face that the user wants changed
+    new_weight : float
+        the number that the user wants the weight of the die face changed to
                 
-Returns
--------
-None
+    Returns
+    -------
+    None
+    
+roll(self, times_to_roll=1):
+    The amount of times the user would like to roll an individual die, defaults to 1
+        
+    Parameters
+    ----------
+    times_to_roll : int
+        the amount of times the user wants their die to roll
+        
+    Returns
+    -------
+    list_of_outcomes : list
+        a list of outcomes for the number of rolls
+      
+reveal():
+    Reveals the die dataframe containing the faces and weights of each die
+        
+    Parameters
+    ----------
+    None
+        
+    Returns
+    -------
+    self._df : pandas dataframe
+        the die dataframe containing the faces and weights of each die
