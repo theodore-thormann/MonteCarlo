@@ -286,7 +286,7 @@ face_counts_per_roll():
 
 # Manifest
 MonteCarlo/ <br>
-  MonteCarlo/ <br>
+  MonteCarlo/ <br>
     ClassesFinalProject.py <br>
     ClassesFinalProject_test.py <br>
     __init__.py <br>
