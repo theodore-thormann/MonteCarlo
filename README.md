@@ -74,7 +74,7 @@ new_game.show(‘narrow’)
 ```
 The narrow dataframe consists of a multi-index with the roll number as the first element of the multi-index and the Dice number as the second element of the multi-index. This dataframe is only one column that shows the face value of the dice roll corresponding to a die during that roll. 
 
-##Analyzer Class 
+## Analyzer Class 
 
 The Analyzer class is used to analyze a game object after a game has been played. Here is an example of code that would instantiate a new analyzer class using a game the user created: 
 ```
@@ -94,7 +94,7 @@ new_analyzer.jackpot()
 ```
 This method also saves a dataframe with all the rolls that met this criteria.  
 
-###combo() 
+### combo() 
 
 The “combo” method saves the distinct combinations of faces rolled, along with their counts. 
 
