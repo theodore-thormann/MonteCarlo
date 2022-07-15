@@ -4,7 +4,9 @@ By Theo Thormann
 A Monte Carlo simulator created for a final project for DS5001 
 
 ## Description 
-This Monte Carlo simulator consists of three separate classes. The Die class, the Game class, and the Analyzer class 
+This Monte Carlo simulator consists of three separate classes. The Die class, the Game class, and the Analyzer class
+
+#Synopsis
 
 ## Installing 
 Running the following code from the terminal on your machine inside the directory which you downloaded this repo to will install the MonteCarlo package onto your machine: 
@@ -111,3 +113,39 @@ Example:
 ```
 new_analyzer.face_count_df 
 ```
+# API Description
+
+## Die Class
+ Attributes
+ ----------
+faces : list
+    a series of die faces
+        
+weights : list
+    a series of weights for each die face, defaults to 1
+        
+Methods
+-------
+change_weight(face_changed, new_weight):
+    Changes the weight of the face corresponding to the user input
+
+roll(times_to_roll=1):
+    The amount of times the user would like to roll an individual die, defaults to 1
+
+reveal():
+    Returns the dataframe for the dice object
+        
+## Die Class Methods
+change_weight(face_changed, new_weight):
+Changes the weight of the face corresponding to the user input
+        
+Parameters
+----------
+face_changed : number or string
+    the face that the user wants changed
+new_weight : float
+    the number that the user wants the weight of the die face changed to
+                
+Returns
+-------
+None
