@@ -1,0 +1,25 @@
+test_01_change_weight (__main__.ClassesFinalProjectSuite)
+Tests the change_weight method by making sure the value from the weight database column is the same as the user input ... ok
+test_02_change_weight (__main__.ClassesFinalProjectSuite)
+Tests the change_weight method by returning false saying the weight database column is not equal to the incorrect number ... ok
+test_03_roll (__main__.ClassesFinalProjectSuite)
+Tests the roll method by making sure that it rolls the amount of time the user specifies ... ok
+test_04_reveal (__main__.ClassesFinalProjectSuite)
+Tests the reveal method by making sure the dataframe created equals the number of faces input by the user ... ok
+test_05_play (__main__.ClassesFinalProjectSuite)
+Tests the play method by making sure the length of the resulting play data fram equals the number of plays input by the user ... ok
+test_06_show_wide (__main__.ClassesFinalProjectSuite)
+Tests the show method to make sure the outputting dataframe is wide by measing the length of columns in the dataframe ... ok
+test_07_show_narrow (__main__.ClassesFinalProjectSuite)
+Tests the show method to make sure the outputting dataframe is narrow by measuring the length of the columns in the dataframe ... ok
+test_08_jackpot (__main__.ClassesFinalProjectSuite)
+Tests the jackpot method by making sure the number of jackpots returned for a very unfair couple of dice is at least 1 ... ok
+test_09_combos (__main__.ClassesFinalProjectSuite)
+Tests the combo method by making sure the dataframe outputs an entry ... ok
+test_10_face_counts_per_roll (__main__.ClassesFinalProjectSuite)
+Tests the face_counts_per_roll method by rolling a dice only one time and making sure the result sums to 1 ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.022s
+
+OK
