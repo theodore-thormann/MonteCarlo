@@ -150,7 +150,7 @@ change_weight(face_changed, new_weight):
     -------
     None
     
-roll(self, times_to_roll=1):
+roll(times_to_roll=1):
     The amount of times the user would like to roll an individual die, defaults to 1
         
     Parameters
