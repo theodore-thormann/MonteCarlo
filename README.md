@@ -23,8 +23,7 @@ The Die class is used to instantiate a die object. Running the following code wi
 ```
 dieExample = Die([1,2,3,4,5,6]) 
 ```
-For this example, the die object will have 6 faces (1,2,3,4,5,6) and the weights of each face will default to one. 
-This die object is stored in a private dataframe with two columns, the first column contains the face of the dice and the second column stores the weight of the associated die face.  
+For this example, the die object will have 6 faces (1,2,3,4,5,6) and the weights of each face will default to one.  
 Within the die class there are three methods: 
 
 ### change_weight() 
@@ -44,7 +43,7 @@ dieExample.roll(10)
 This will “roll” the die ten times, creating a list of outcomes for those 10 rolls. 
 
 ### reveal() 
- The “reveal“ method allows the user to view the private dataframe of the Die object
+ The “reveal“ method allows the user to view the dataframe of the Die object, with one column displaying the face value and another displaying the weight of that associated face value.
 
 ## Game Class 
 The Game class is used to instantiate a game class consisting of a list of dice instantiated by the user. Here is an example of code that could run a new game using a list of dice instantiated by the user:
