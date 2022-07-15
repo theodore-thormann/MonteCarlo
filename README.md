@@ -47,7 +47,7 @@ This will “roll” the die ten times, creating a list of outcomes for those 10
  The “reveal“ method allows the user to view the private dataframe of the Die object
 
 ## Game Class 
-The Game class is used to instantiate a game class consisting of a list of dice instantiated by the user. Runing the following code will create a new game: 
+The Game class is used to instantiate a game class consisting of a list of dice instantiated by the user. Here is an example of code that could run a new game using a list of dice instantiated by the user:
 ```
 new_game = Game(list_of_dice) 
 ```
