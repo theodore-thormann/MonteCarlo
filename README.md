@@ -233,3 +233,53 @@ show(choice='wide'):
     self.narrow_df : pandas dataframe
         a dataframe with a two column index consisting of the roll number and the die number and a single column showing the faces rolled        
         
+## Analyzer Class
+    A class to represent an analyzer which analyzes a game played of dice played
+    
+    ...
+    Attributes
+    ----------
+    game : object
+        an object instantiated from the game class
+    self.access : pandas dataframe
+        a dataframe showing the results from the game object
+        
+    Methods
+    -------
+    jackpot():
+        Shows the user how many times a roll resulted in all faces being the same.
+
+    combo():
+        Shows the suer how many combination types of faces were rolled and their counts.
+
+    face_counts_per_roll():
+        Computes how many times a given face is rolled for each roll of a game.
+        
+## Analyzer Class Methods
+__init__(game):
+
+    Constructs all the necessary attributes for the analyzer object
+        
+    Parameters
+    ----------
+    game : object
+        an object instantiated from the game class
+        
+jackpot():
+
+    Shows the user how many times a roll resulted in all faces being the same.
+        
+    Parameters
+    ----------
+    None
+        
+    Returns
+    -------
+    jackpot print statement : string
+        A string telling the user the number of jackpots in their game
+        
+combo():
+    Stores a data frame of how many combination types of faces were rolled and their counts.
+    
+face_counts_per_roll():
+    Computes how many times a given face is rolled for each roll of a game.    
