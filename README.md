@@ -3,7 +3,7 @@ By Theo Thormann
 
 A Monte Carlo simulator created for a final project for DS5001 
 
-# Description 
+## Description 
 This Monte Carlo simulator consists of three separate classes. The Die class, the Game class, and the Analyzer class 
 
 ## Installing 
@@ -27,11 +27,11 @@ Example:
 dieExample.change_weight(6,5) 
 This will change the example die’s weight of the 6 face to 5, making the odds of rolling a 6 higher than the odds of rolling any other face on the dice. 
 
-###roll() 
+### roll() 
 The “roll” method allows the user to roll one of their instantiated dice.  
 Example: 
 dieExample.roll(10) 
 This will “roll” the die ten times, creating a list of outcomes for those 10 rolls. 
 
-###reveal() 
+### reveal() 
  The “reveal“ method allows the user to view the private dataframe of the Die object 
