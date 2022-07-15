@@ -73,3 +73,52 @@ Example 2:
 new_game.show(‘narrow’) 
 ```
 The narrow dataframe consists of a multi-index with the roll number as the first element of the multi-index and the Dice number as the second element of the multi-index. This dataframe is only one column that shows the face value of the dice roll corresponding to a die during that roll. 
+
+##Analyzer Class 
+
+The Analyzer class is used to analyze a game object after a game has been played. Here is an example of code that would instantiate a new analyzer class using a game the user created: 
+```
+new_analyzer = Analyzer(game) 
+```
+ 
+
+Within the analyzer class there are three methods: 
+
+### jackpot() 
+
+The “jackpot” method computes how many times the game resulted in all faces being identical and returns an integer to the user showing this result. 
+
+Example: 
+```
+new_analyzer.jackpot() 
+```
+This method also saves a dataframe with all the rolls that met this criteria.  
+
+###combo() 
+
+The “combo” method saves the distinct combinations of faces rolled, along with their counts. 
+
+Example: 
+```
+new_analyzer.combo() 
+```
+The combo method saves these combinations to a dataframe, which can be accessed by the user by using “.combo_df” after their analyzer object. 
+
+Example: 
+```
+new_analyzer.combo_df 
+```
+### face_counts_per_roll() 
+
+The face_counts_per_roll method computes how many times a given face is rolled in each event. 
+
+Example: 
+```
+new_analyzer.face_counts_per_roll() 
+```
+The face_counts_per_roll method saves to a dataframe, which can be accessed by the user using “.face_count_df” after their analyzer object 
+
+Example:
+```
+new_analyzer.face_count_df 
+```
