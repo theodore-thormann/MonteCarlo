@@ -116,24 +116,24 @@ new_analyzer.face_count_df
 # API Description
 
 ## Die Class
- Attributes
- ----------
-faces : list
-    a series of die faces
+    Attributes
+    ----------
+    faces : list
+        a series of die faces
         
-weights : list
-    a series of weights for each die face, defaults to 1
+    weights : list
+        a series of weights for each die face, defaults to 1
         
-Methods
--------
-change_weight(face_changed, new_weight):
-    Changes the weight of the face corresponding to the user input
+    Methods
+    -------
+    change_weight(face_changed, new_weight):
+        Changes the weight of the face corresponding to the user input
 
-roll(times_to_roll=1):
-    The amount of times the user would like to roll an individual die, defaults to 1
+    roll(times_to_roll=1):
+        The amount of times the user would like to roll an individual die, defaults to 1
 
-reveal():
-    Returns the dataframe for the dice object
+    reveal():
+        Returns the dataframe for the dice object
         
 ## Die Class Methods
 change_weight(face_changed, new_weight):
