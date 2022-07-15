@@ -6,7 +6,7 @@ A Monte Carlo simulator created for a final project for DS5001
 ## Description 
 This Monte Carlo simulator consists of three separate classes. The Die class, the Game class, and the Analyzer class
 
-#Synopsis
+# Synopsis
 
 ## Installing 
 Running the following code from the terminal on your machine inside the directory which you downloaded this repo to will install the MonteCarlo package onto your machine: 
