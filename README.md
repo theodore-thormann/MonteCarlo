@@ -44,4 +44,32 @@ dieExample.roll(10)
 This will “roll” the die ten times, creating a list of outcomes for those 10 rolls. 
 
 ### reveal() 
- The “reveal“ method allows the user to view the private dataframe of the Die object 
+ The “reveal“ method allows the user to view the private dataframe of the Die object
+
+## Game Class 
+The Game class is used to instantiate a game class consisting of a list of dice instantiated by the user. Runing the following code will create a new game: 
+```
+new_game = Game(list_of_dice) 
+```
+Within the game class, there are two methods: 
+
+## play() 
+The play method will “play” a game with the list of specified dice.  
+Example: 
+```
+new_game.play(10) 
+```
+This will roll each die in the user set list 10 times. The user can specify any integer in the argument of the method.  
+
+## show() 
+The “show” method will show the user either a wide or narrow dataframe depending on what argument the user passes into the method.  
+Example 1: 
+```
+new_game.show(‘wide’) 
+```
+The wide dataframe consists of an index corresponding to the roll number (starting with zero), columns corresponding to a dice roll, and the face values as the values inside the dataframe.  
+Example 2: 
+```
+New_game.show(‘narrow’) 
+```
+The narrow dataframe consists of a multi-index with the roll number as the first element of the multi-index and the Dice number as the second element of the multi-index. This dataframe is only one column that shows the face value of the dice roll corresponding to a die during that roll. 
