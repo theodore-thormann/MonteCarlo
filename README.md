@@ -14,7 +14,7 @@ $pip install –e .
 To import the classes used for the MonteCarlo simulator into your IDE or text editor use: 
 from ClassesFinalProject import * 
 
-# Die 
+## Die Class
 The Die class is used to instantiate a die object. Running the following code will instantiate a die object with two attributes of faces or weights: 
 dieExample = Die([1,2,3,4,5,6]) 
 For this example, the die object will have 6 faces (1,2,3,4,5,6) and the weights of each face will default to one. 
