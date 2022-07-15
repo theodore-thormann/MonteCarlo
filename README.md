@@ -136,6 +136,15 @@ new_analyzer.face_count_df
         Returns the dataframe for the dice object
         
 ## Die Class Methods
+__init__(faces, weights = 1):
+    Constructs all the necessary attributes for the die object
+        
+    Parameters
+    ----------
+        faces : list
+            a series of die faces
+        weights: list
+            a series of weights for each die face, default to 1
 change_weight(face_changed, new_weight):
     Changes the weight of the face corresponding to the user input
         
@@ -174,3 +183,53 @@ reveal():
     -------
     self._df : pandas dataframe
         the die dataframe containing the faces and weights of each die
+        
+## Game Class
+    A class to represent a game which consists of rolling one or more dice of the same kind one or more times
+    
+    ...
+    Attributes
+    ----------
+    list_of_dice : list
+        a list of die that were instantiated using the Die class
+        
+    Methods
+    -------
+    play(roll_times):
+        Rolls each die in the dice list the amount of times specified by the user
+
+    show(choice='wide'):
+        Shows the user the results of the rolls.
+## Game Class Methods
+__init__(list_of_dice):
+    Constructs all the necessary attributes for the game object
+        
+    Parameters
+    ----------
+    list_of_dice : list
+        a list of die that were instantiated using the Die class
+
+play(roll_times):
+    Rolls each die in the dice list the amount of times specified by the user
+        
+    Parameters
+    ----------
+    roll_times : int
+        the amount of times the user wants their list of die to roll for the game
+        
+show(choice='wide'):
+    Shows the user the results of the rolls.
+        
+    Parameters
+    ----------
+    choice : string
+        the user specifies if they would like the dataframe returned to be 'wide' or 'narrow'
+            
+    Returns
+    -------
+    self.faces_df : pandas dataframe
+        a dataframe with the roll number as the index, each die from the list_of_dice list as a column and the results of each roll as a value
+            
+    self.narrow_df : pandas dataframe
+        a dataframe with a two column index consisting of the roll number and the die number and a single column showing the faces rolled        
+        
